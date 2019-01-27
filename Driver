@@ -1,0 +1,25 @@
+/**
+This class makes different parking metres, with different rates and cars that stay for certain amount of time.
+@author Daniel Gallant 3429145
+*/
+public class ParkingMetreDriver
+{
+	public static void main (String[] agrs)
+	{
+		ParkingMetre car1 = new ParkingMetre ("Manhattan", 0.0583);
+		ParkingMetre car2 = new ParkingMetre("Toronto", 0.05); 
+
+		car1.addMoney(10.00);
+		car2.addMoney(15.00);
+		
+	 	car1.removeTime(20);
+		car2.removeTime(25);
+		
+		System.out.println("Your locations is: " + car1.setLocation() + ", \n\tYour rate is: " 		+ car1.setParkingRate() + "$/minute, \n\tand you have: " +  car1.setTime() + " minutes left.");
+
+		System.out.println("Your locations is: " + car2.setLocation() + ", \n\tYour rate is: " 	+ car2.setParkingRate() + "$/minute, \n\tand you have: " + car2.setTime() + " minutes left.");
+
+	}
+
+
+}
